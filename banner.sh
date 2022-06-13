@@ -15,15 +15,15 @@ R0="\033[00m"   R1="\033[1;00m"
 #------------requirments--------------
 # checking neofetch is installed or not
 
-#pack=(neofetch)
-#for i in "${pack[@]}"; do
-#if ! hash $i; then
-#printf "${S1}package neofetch not founded${R0}\n"
-#sleep 1
-#printf "${S4}[*]INSTALLING NEOFETCH PLEASE WAIT${R0}\n"
-#pkg install $i > /dev/null 2>&1
-#fi
-#done
+pack=(neofetch)
+for i in "${pack[@]}"; do
+if ! hash $i; then
+printf "${S1}package neofetch not founded${R0}\n"
+sleep 1
+printf "${S4}[*]INSTALLING NEOFETCH PLEASE WAIT${R0}\n"
+pkg install $i > /dev/null 2>&1
+fi
+done
 #-------------------------------------
 
 #++++++++++++++++ function for modify ++++++++++++++++
