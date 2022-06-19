@@ -193,7 +193,7 @@ read choice
           [*] To see please reopen TERMUX, It will be seted
           [*] THANKS FOR USING...... :-)" | pv -qL 100 | lolcat
 
-break
+exit 1
    elif [[ $choice == '2' || $choice == '02' ]]; then
      echo
      printf "${C4}[*]YOU SELECTED 2nd PS1[*] ${R0}"
@@ -223,7 +223,7 @@ break
           [*] To see please reopen TERMUX, It will be seted
           [*] THANKS FOR USING...... :-)" | pv -qL 100 | lolcat
 
-break
+exit 1
   elif [[ $choice == '3' || $choice == '03' ]]; then
     echo
      printf "${C4}[*]YOU SELECTED 3rd PS1[*] ${R0}"
@@ -252,7 +252,7 @@ break
           [*] All thing completed
           [*] To see please reopen TERMUX, It will be seted
           [*] THANKS FOR USING...... :-)" | pv -qL 100 | lolcat
-break
+exit 1
  fi
 done
 }
